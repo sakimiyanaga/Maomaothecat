@@ -4,6 +4,7 @@
 
 img {
 	width: 100%;
+	opacity: 1;
 }
 
 body {
@@ -34,13 +35,27 @@ h3 {
 	background: no-repeat center;
 	top: 0;
 	width: 100%;
-	z-index: -1;
+	z-index: -999;
+}
+
+.backgroundwhite {
+	background-color: white;
+	background-top: 0;
+	opacity: 0.8;
+    background-size: cover;
+    display: block;
+    z-index: -998;
+    width: 100vw;
+    height: 100vh; 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
 }
 
 .tabs {
 	vertical-align: middle;
 	text-align: center;
-	width: 100%;
+	width: 100vw;
 	border-bottom: solid 1px #d8d8d8;
 	text-transform: uppercase;
 }
@@ -106,6 +121,11 @@ button:before {
 button:hover:after, button:hover:before {
     -webkit-transform: translate(0);
           transform: translate(0);
+}
+.container img {
+	width: 10rem;
+	border: 1px solid;
+	border-radius: 50%;
 }
 footer {
     position: absolute;
